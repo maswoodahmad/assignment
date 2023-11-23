@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Jasmine-Node Debugging",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}\\jasmine-node\\lib\\jasmine-node\\cli.js",
+            "request": "launch",
+            "type": "node",
+            "args": [
+                //"spec/simIoControlWithHardwareSimulation-spec.js" // can be use one Raspberry pi Hardware for testing                
+                "spec/i2s_util-spec.js",
+                "spec/simFileHandler-spec.js",
+                "spec/simFileParserSettings-spec.js",
+                "spec/simFileParserSettingsDefault-spec.js",
+                "spec/simFileParserSimulation-spec.js",
+                "spec/simulationFileTest-spec.js",
+                "spec/simulationJS-spec.js",
+                "spec/simulationJsOld-spec.js",
+                "spec/simPerformanceFileTest-spec.js",              
+                "spec/simulationJSFunc-spec.js",
+                "spec/simulationJS_unknownECU_Func-spec.js",
+                "spec/simulationJS_unknownECU_Phys-spec.js",
+                "spec/simulationJS_RX_Timeout-spec.js",
+                "spec/simAppDefine-spec.js",
+                "spec/simulationJS_DoIP-spec.js",
+                "spec/simAppDefineWithInvalidFile-spec.js",
+                "spec/simulationJS_with_simFileHandlerTEST-spec.js",
+                "spec/simulationJS_PeriodicParallelResponseWithCount-spec.js",
+                "spec/simIoControlWithPcSimulation-spec",
+                "spec/simulationJS_withEnabledCanOnBoard-spec.js",
+                "spec/simulationJS_withDisabledCanOnBoard-spec.js",
+                "spec/simulationJS_withCanOnBoardControl-spec.js",
+                "spec/simulationJS_withCanOnBoardControlState-spec.js",
+                "spec/simulationJS_withCanOnBoardFrameCount-spec.js",
+                "spec/simulationJS_withExtAddressing_simFileHandlerTEST-spec.js",
+                "spec/simulationJS_with_J1939-spec.js",
+                "spec/simulationJS_with_Kline-spec.js"
+           ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Node app.js",
+            "program": "${workspaceRoot}\\app.js"
+        }
+    ]
+}
